@@ -1,0 +1,10 @@
+These files are where I devoloped the code to fix dates, season, etc.
+
+There is a nice final version of this in the .py files 
+
+The others folder tools for fixing dates were made slightly earlier
+The shape_data copies the functions from that folder to the top of the file.
+
+There are v1, v2, v3 of shape_data just because I think I got muddled and started fresh each time
+
+

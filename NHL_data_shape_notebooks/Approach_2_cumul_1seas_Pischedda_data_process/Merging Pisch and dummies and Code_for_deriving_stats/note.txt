@@ -1,0 +1,3 @@
+These files develop tools for deriving stats like cumulative avergages
+
+They also output the Pisch plus dummies csv 

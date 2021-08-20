@@ -1,0 +1,121 @@
+mp_to_nhl_dic = {'ANA': 'ANA',
+ 'ARI': 'ARI',
+ 'ATL': 'ATL',
+ 'BOS': 'BOS',
+ 'BUF': 'BUF',
+ 'CAR': 'CAR',
+ 'CBJ': 'CBJ',
+ 'CGY': 'CGY',
+ 'CHI': 'CHI',
+ 'COL': 'COL',
+ 'DAL': 'DAL',
+ 'DET': 'DET',
+ 'EDM': 'EDM',
+ 'FLA': 'FLA',
+ 'L.A': 'LAK',
+ 'MIN': 'MIN',
+ 'MTL': 'MTL',
+ 'N.J': 'NJD',
+ 'NSH': 'NSH',
+ 'NYI': 'NYI',
+ 'NYR': 'NYR',
+ 'OTT': 'OTT',
+ 'PHI': 'PHI',
+ 'PIT': 'PIT',
+ 'S.J': 'SJS',
+ 'STL': 'STL',
+ 'T.B': 'TBL',
+ 'TOR': 'TOR',
+ 'VAN': 'VAN',
+ 'VGK': 'VGK',
+ 'WPG': 'WPG',
+ 'WSH': 'WSH'}
+
+bet_to_nhl_dic = {'Anaheim': 'ANA',
+ 'Arizona': 'ARI',
+ 'Arizonas': 'ARI',
+ 'Atlanta': 'ATL',
+ 'Boston': 'BOS',
+ 'Buffalo': 'BUF',
+ 'Calgary': 'CGY',
+ 'Carolina': 'CAR',
+ 'Chicago': 'CHI',
+ 'Colorado': 'COL',
+ 'Columbus': 'CBJ',
+ 'Dallas': 'DAL',
+ 'Detroit': 'DET',
+ 'Edmonton': 'EDM',
+ 'Florida': 'FLA',
+ 'LosAngeles': 'LAK',
+ 'Minnesota': 'MIN',
+ 'Montreal': 'MTL',
+ 'NYIslanders': 'NYI',
+ 'NYRangers': 'NYR',
+ 'Nashville': 'NSH',
+ 'NewJersey': 'NJD',
+ 'Ottawa': 'OTT',
+ 'Philadelphia': 'PHI',
+ 'Phoenix': 'ARI',
+ 'Pittsburgh': 'PIT',
+ 'SanJose': 'SJS',
+ 'St.Louis': 'STL',
+ 'Tampa': 'TBL',
+ 'TampaBay': 'TBL',
+ 'Toronto': 'TOR',
+ 'Vancouver': 'VAN',
+ 'Vegas': 'VGK',
+ 'Washington': 'WSH',
+ 'Winnipeg': 'WPG',
+ 'WinnipegJets': 'WPG'}
+
+game_to_nhl_dic = {1: 'NJD',
+ 4: 'PHI',
+ 26: 'LAK',
+ 14: 'TBL',
+ 6: 'BOS',
+ 3: 'NYR',
+ 5: 'PIT',
+ 17: 'DET',
+ 28: 'SJS',
+ 18: 'NSH',
+ 23: 'VAN',
+ 16: 'CHI',
+ 9: 'OTT',
+ 8: 'MTL',
+ 30: 'MIN',
+ 15: 'WSH',
+ 19: 'STL',
+ 24: 'ANA',
+ 27: 'ARI',
+ 2: 'NYI',
+ 10: 'TOR',
+ 13: 'FLA',
+ 7: 'BUF',
+ 20: 'CGY',
+ 21: 'COL',
+ 25: 'DAL',
+ 29: 'CBJ',
+ 52: 'WPG',
+ 22: 'EDM',
+ 54: 'VGK',
+ 12: 'CAR',
+ 53: 'ARI',
+ 11: 'ATL'}
+
+def bet_to_nhl(Team):
+    return bet_to_nhl_dic[Team]
+
+def mp_to_nhl(team):
+    return mp_to_nhl_dic[team]
+
+def game_to_nhl(team_id):
+    return game_to_nhl_dic[team_id]
+
+##simple tests:
+print(set(bet_to_nhl_dic.values()) == set(mp_to_nhl_dic.values()) )
+print(set(bet_to_nhl_dic.values() )== set(game_to_nhl_dic.values()) )
+print(set(mp_to_nhl_dic.values()) == set(game_to_nhl_dic.values()) )
+
+print(set(game_to_nhl_dic.values()))
+print(set(bet_to_nhl_dic.values()))
+print(set(mp_to_nhl_dic.values()))
